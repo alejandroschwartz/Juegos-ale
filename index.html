@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title> Piedra papel </title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        
+        <header class="cabecera">
+            <div class="cabecera__div">
+                <figure class="cabecera__logo">
+                    <img class="cabecera__logo--image" src="images/dados.png" alt="Imagen de dados">
+                </figure>
+                <nav class="navegador"> 
+                    <ul class="navegador__juego">
+                        <li> <a href="#"> Inicio </a>  </li>
+                        <li> <a href="#"> Piedra papel tijera </a>  </li>
+                        <li> <a href="#"> Tirar los dados </a> </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+                        
+        <article class="articulo">
+            <div class="article__text">
+                <p> Juega contra la máquina </p>
+                <br />
+                <p> Piedra, Papel o tijera </p>
+                <br />
+                <p> <strong> ¿Cual elegís? </strong> </p>
+                <br />
+            </div>
+
+            <select class="articulo__opciones" id="selection" >
+                <option value="0" >-- Selección --</option>
+                <option value="1" > Piedra </option>
+                <option value="2" > Papel </option>
+                <option value="3" > Tijera </option>
+            </select>        
+            <input class="articulo__boton" type="button" value="Click aqui" id="boton" /> 
+                
+            <br />
+            <br />
+            <p id="resultado"></p>
+        </article>
+        
+        <footer class="footer"> 
+            <div class="contact__text">
+                <p> Diseñado por: <strong>Alejandro Schwartz</strong> </p> 
+                <h3>¿Creamos algo juntos?</h3>
+                <p>Contactame por los siguientes medios.</p> <br />
+            </div>
+        </footer>
+        <section class="contact" id="Contacto">
+            <div class="contact__logos">
+                <div class="contact__logo--container">
+                    <figure class="contact__logos--figure" >
+                        <img src="images/facebook.png" alt="Logo facebook">
+                    </figure> 
+                </div>
+                <div class="contact__logo--container">                   
+                    <figure class="contact__logos--figure">
+                        <img src="images/instagram.png" alt="Logo instagram">
+                    </figure>
+                </div>
+                <div class="contact__logo--container">
+                    <figure class="contact__logos--figure">
+                        <img src="images/twitter.png" alt="Logo twitter">
+                    </figure>                 
+                </div>
+                <div class="contact__logo--container">
+                    <figure class="contact__logos--figure">
+                        <img src="images/github.png" alt="Logo github">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <script src="play.js" > 
+        </script>
+
+</body>
+</html>
