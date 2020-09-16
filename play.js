@@ -3,6 +3,10 @@ inicio.addEventListener("click", jugar);
 var resultado = document.getElementById("resultado");
 
 
+// url imagen piedra:  "https://i.imgur.com/RML1AP3.png"
+// url imagen papel:  "https://i.imgur.com/4zcSVMw.png"
+// url imagen tijera:  "https://i.imgur.com/6kqyqK5.png"
+
 function jugar()
 { 
     var maquina = Math.floor(Math.random() * 3)+1;
@@ -12,24 +16,24 @@ function jugar()
     
     // Para visualizar la mano del jugador en pantalla
     if (jugador == 1) {
-        document.getElementById("mano1").src="images/piedra.png";
+        document.getElementById("mano1").src="https://i.imgur.com/RML1AP3.png";
     }
     else if (jugador == 2) {
-        document.getElementById("mano1").src="images/papel.png";
+        document.getElementById("mano1").src="https://i.imgur.com/4zcSVMw.png";
     }
     else {
-        document.getElementById("mano1").src="images/tijera.png";
+        document.getElementById("mano1").src="https://i.imgur.com/6kqyqK5.png";
     }
     
     // Para visualizar la mano de la maquina en pantalla
     if (maquina == 1) {
-        document.getElementById("mano2").src="images/piedra.png";
+        document.getElementById("mano2").src="https://i.imgur.com/RML1AP3.png";
     }
     else if (maquina == 2) {
-        document.getElementById("mano2").src="images/papel.png";
+        document.getElementById("mano2").src="https://i.imgur.com/4zcSVMw.png";
     }
     else {
-        document.getElementById("mano2").src="images/tijera.png";
+        document.getElementById("mano2").src="https://i.imgur.com/6kqyqK5.png";
     }
 
     // Programacion de la partida
