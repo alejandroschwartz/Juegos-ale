@@ -21,64 +21,76 @@
                 </nav>
             </div>
         </header>
-                        
-        <article class="articulo">
-            <div class="article__text">
-                <p> Juega contra la máquina </p>
-                <br />
-                <p> Piedra, Papel o tijera </p>
-                <br />
-                <p> <strong> ¿Cual elegís? </strong> </p>
-                <br />
+                 
+        <article class="article">
+            <div class="article__container">
+                <div class="article__text">
+                    <p> Juega contra la máquina <br/> Piedra, Papel o tijera </p>
+                    <br />
+                    <p> <strong> ¿Cual elegís? </strong> </p>
+                    <br />
+                </div>
+    
+                <select class="articulo__opciones" id="selection" >
+                    <option value="0" >-- Selección --</option>
+                    <option value="1" > Piedra </option>
+                    <option value="2" > Papel </option>
+                    <option value="3" > Tijera </option>
+                </select>    
+                <input class="articulo__boton" type="button" value="Click aqui" id="boton" />
+                <div class="mano__container">
+                    <div class="mano">
+                        <img src="images/papel.png" alt="" id="mano1" class="manoJugador__img">
+                    </div>
+                    <div class="manoVs">
+                        <p>VS.</p>
+                    </div>
+                    <div class="mano">
+                        <img src="images/papel.png" alt="" id="mano2" class="manoMaquina__img">
+                    </div>
+                </div>
+                <div class="results">
+                    <h3 id="resultado"></h3>
+                </div>
             </div>
-
-            <select class="articulo__opciones" id="selection" >
-                <option value="0" >-- Selección --</option>
-                <option value="1" > Piedra </option>
-                <option value="2" > Papel </option>
-                <option value="3" > Tijera </option>
-            </select>        
-            <input class="articulo__boton" type="button" value="Click aqui" id="boton" /> 
-                
-            <br />
-            <br />
-            <p id="resultado"></p>
         </article>
         
         <footer class="footer"> 
             <div class="contact__text">
-                <p> Diseñado por: <strong>Alejandro Schwartz</strong> </p> 
-                <h3>¿Creamos algo juntos?</h3>
+                <h2>¿Creamos algo juntos?</h2>
                 <p>Contactame por los siguientes medios.</p> <br />
             </div>
+            <section class="contact" id="Contacto">
+                <div class="contact__logos">
+                    <div class="contact__logo--container">
+                        <figure class="contact__logos--figure" >
+                            <img src="images/facebook.png" alt="Logo facebook">
+                        </figure> 
+                    </div>
+                    <div class="contact__logo--container">                   
+                        <figure class="contact__logos--figure">
+                            <img src="images/instagram.png" alt="Logo instagram">
+                        </figure>
+                    </div>
+                    <div class="contact__logo--container">
+                        <figure class="contact__logos--figure">
+                            <img src="images/twitter.png" alt="Logo twitter">
+                        </figure>                 
+                    </div>
+                    <div class="contact__logo--container">
+                        <figure class="contact__logos--figure">
+                            <img src="images/github.png" alt="Logo github">
+                        </figure>
+                    </div>
+                </div>
+            </section>
         </footer>
-        <section class="contact" id="Contacto">
-            <div class="contact__logos">
-                <div class="contact__logo--container">
-                    <figure class="contact__logos--figure" >
-                        <img src="images/facebook.png" alt="Logo facebook">
-                    </figure> 
-                </div>
-                <div class="contact__logo--container">                   
-                    <figure class="contact__logos--figure">
-                        <img src="images/instagram.png" alt="Logo instagram">
-                    </figure>
-                </div>
-                <div class="contact__logo--container">
-                    <figure class="contact__logos--figure">
-                        <img src="images/twitter.png" alt="Logo twitter">
-                    </figure>                 
-                </div>
-                <div class="contact__logo--container">
-                    <figure class="contact__logos--figure">
-                        <img src="images/github.png" alt="Logo github">
-                    </figure>
-                </div>
-            </div>
-        </section>
+        <div class="design"> 
+            <p> Diseñado por: <strong>Alejandro Schwartz</strong> <br/> Cel: +54 0351 3022392 <br/> Córdoba - Argentina </p> 
+        </div>
         
         <script src="play.js" > 
         </script>
 
-</body>
+    </body>
 </html>

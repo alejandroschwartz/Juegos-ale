@@ -3,10 +3,9 @@ body {
     padding: 0;
 }
 
-.cabecera
-{
+.cabecera {
     height: 90px;
-    background: rgb(115, 115, 214);
+    background: #3a0088;
     color: rgb(255, 255, 255);
     font-size: 25px;
     font-family: Arial black;
@@ -32,23 +31,20 @@ body {
     height: 60px;
 }
 
-.navegador
-{
+.navegador {
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-.navegador__juego
-{
+.navegador__juego {
     margin: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.navegador__juego a
-{
+.navegador__juego a {
     margin: 0;
     padding: 6px 24px;
     border-radius: 8px;
@@ -65,74 +61,146 @@ body {
     background: rgb(103, 103, 202)
 }
 
-.articulo
-{
-    margin: 20px 20px 20px 20px;
-    border-radius: 1em;
-    background: rgb(145, 145, 218);
-    color: rgb(19, 2, 2);
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+.article {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* flex-direction: column; */
+    justify-content: center;
     align-items: center;
 }
 
-.articulo p
-{
+.article__container {
+    width: 85%;
+    margin: 30px 0px;
+    border-radius: 1em;
+    background: #e61c5d;
+    color: rgb(19, 2, 2);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+    -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
+    box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
+}
+
+.article p {
     height: 60px;
-    width: 600px;
     margin: 6px;
     color: rgb(19, 2, 2);
     font-size: 32px;
     font-weight: 400;
-    font-family: Arial black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
     display: flex;
     justify-content: center;
 }
 
 .article__text {
-    
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.articulo__opciones
-{
-    height: 60px;
-    width: 400px;
+.articulo__opciones {
+    height: 40px;
+    width: 360px;
     color: rgb(19, 2, 2);
-    font-size: 30px;
+    font-size: 18px;
     font-family: Arial black;
 }
 
-.articulo__boton
-{
-    height: 60px;
-    width: 400px;
+.articulo__boton {
+    height: 40px;
+    width: 200px;
     margin: 1em;
     border-radius: 1em;
     color: rgb(19, 2, 2);
-    font-size: 30px;
+    font-size: 22px;
     font-family: Arial black;
 }
 
-.footer
-{
-    height: 170px;
-    background: rgb(115, 115, 214);
+.mano__container {
+    /* border: 2px solid red; */
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mano {
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+
+    -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
+}
+
+.manoJugador__img {
+    width: 150px;
+    height: 150px;
+}
+
+.manoMaquina__img {
+    width: 150px;
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.manoVs {
+    /* border: 2px solid red; */
+    width: 100px;
+    height: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.results {
+    /* border: 2px solid red; */
+    width: 500px;
+    height: 60px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.results h3 {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer {
+    /* height: 170px; */
+    padding: 30px;
+    background: #930077;
     color: rgb(255, 255, 255);
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .contact {
-    height: 200px;
+    /* height: 200px; */
     font-size: 24px;
-    background: rgb(115, 115, 214);
+    /* background: rgb(115, 115, 214); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,6 +228,8 @@ body {
 }
 
 .contact__logos {
+    margin-top: 40px;
+    margin-bottom: 80px;
     box-sizing: border-box;
     height: 150px;
     max-width: 1200px;
@@ -186,4 +256,18 @@ body {
     height: 88px;
     width: 88px;
     padding: 10px;
+}
+
+.design {
+    /* width: 100%; */
+    margin: 0;
+    padding: 16px;
+    background: #3a0088;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
 }
