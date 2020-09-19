@@ -44,7 +44,6 @@ body {
 
 .header__figure {
     height: 60px;
-    /* width: 80px; */
 }
 
 .header__image {
@@ -428,7 +427,8 @@ body {
     }
 
     .nav__ul a {
-        padding: 8px 70px;
+        padding: 8px 40px;
+        font-size: 16px;
     }
 
     .nav__ul a:hover {
