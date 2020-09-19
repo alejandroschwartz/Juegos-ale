@@ -6,23 +6,26 @@
         <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
     <body>
-        
-        <header class="cabecera">
-            <div class="cabecera__div">
-                <figure class="cabecera__logo">
-                    <img class="cabecera__logo--image" src="https://i.imgur.com/US7Y6HC.png" title="source: imgur.com" />
+        <div class="icon" >
+            <i class="icon__menu" id="burger-menu" >
+                <img src="https://i.imgur.com/olKtZ4H.png" alt="">
+            </i>
+        </div>
+        <header class="header">
+            <div class="header__div">
+                <figure class="header__figure">
+                    <img class="header__image" src="https://i.imgur.com/US7Y6HC.png" />
                     <!-- <img class="cabecera__logo--image" src="images/dados.png" alt="Imagen de dados"> -->
                 </figure>
-                <nav class="navegador"> 
-                    <ul class="navegador__juego">
-                        <li> <a href="#"> Inicio </a>  </li>
-                        <li> <a href="#"> Piedra papel tijera </a>  </li>
-                        <li> <a href="#"> Tirar los dados </a> </li>
+                <nav class="nav"> 
+                    <ul class="nav__ul" >
+                        <li class="nav__ul--li" > <a href="#"> Inicio </a>  </li>
+                        <li class="nav__ul--li" > <a href="#"> Piedra papel tijera </a>  </li>
+                        <li class="nav__ul--li" > <a href="#"> Tirar los dados </a> </li>
                     </ul>
                 </nav>
             </div>
         </header>
-                 
         <article class="article">
             <div class="article__container">
                 <div class="article__text">
@@ -31,24 +34,23 @@
                     <p> <strong> ¿Cual elegís? </strong> </p>
                     <br />
                 </div>
-    
-                <select class="articulo__opciones" id="selection" >
+                <select class="article__option" id="selection" >
                     <option value="0" >--  Selección  --</option>
                     <option value="1" > Piedra </option>
                     <option value="2" > Papel </option>
                     <option value="3" > Tijera </option>
                 </select>    
-                <input class="articulo__boton" type="button" value="Click aqui" id="boton" />
+                <input class="article__button" type="button" value="Click aqui" id="boton" />
                 <div class="mano__container">
                     <div class="mano">
-                        <img class="manoJugador__img" src="https://i.imgur.com/lpcF33U.png" title="source: imgur.com" id="mano1" />
+                        <img class="manoJugador__img" src="https://i.imgur.com/lpcF33U.png" id="mano1" />
                         <!-- <img src="images/papel.png" alt="" id="mano1" class="manoJugador__img"> -->
                     </div>
                     <div class="manoVs">
                         <p>VS.</p>
                     </div>
                     <div class="mano">
-                        <img class="manoMaquina__img" src="https://i.imgur.com/lpcF33U.png" title="source: imgur.com" id="mano2" />
+                        <img class="manoMaquina__img" src="https://i.imgur.com/lpcF33U.png" id="mano2" />
                         <!-- <img src="images/papel.png" alt="" id="mano2" class="manoMaquina__img"> -->
                     </div>
                 </div>
@@ -57,7 +59,6 @@
                 </div>
             </div>
         </article>
-        
         <footer class="footer"> 
             <div class="contact__text">
                 <h2>¿Creamos algo juntos?</h2>
@@ -66,46 +67,57 @@
             <section class="contact" id="Contacto">
                 <div class="contact__logos">
                     <div class="contact__logo--container">
-                        <figure class="contact__logos--figure" >
-                            <a href="https://imgur.com/dnTpGPq">
-                                <img src="https://i.imgur.com/dnTpGPq.png" title="source: imgur.com" />
+                        <figure class="contact__logos--figure">
+                            <a href="https://github.com/alejandroschwartz" >
+                                <img src="https://i.imgur.com/YnmsWrN.png" />
                             </a>
-                            <!-- <img src="images/facebook.png" alt="Logo facebook"> -->
+                        </figure>
+                    </div>
+                    <div class="contact__logo--container">
+                        <figure class="contact__logos--figure" >
+                            <a href="https://www.facebook.com/alejandromatias.schwartz" >
+                                <img src="https://i.imgur.com/dnTpGPq.png"/>
+                            </a>
                         </figure> 
                     </div>
                     <div class="contact__logo--container">                   
                         <figure class="contact__logos--figure">
-                            <a href="https://imgur.com/ZFJN58g">
-                                <img src="https://i.imgur.com/ZFJN58g.png" title="source: imgur.com" />
+                            <a href="https://www.instagram.com/vectocor/" >
+                                <img src="https://i.imgur.com/ZFJN58g.png" />
                             </a>
-                            <!-- <img src="images/instagram.png" alt="Logo instagram"> -->
                         </figure>
                     </div>
                     <div class="contact__logo--container">
                         <figure class="contact__logos--figure">
-                            <a href="https://imgur.com/AsWgbAo">
-                                <img src="https://i.imgur.com/AsWgbAo.png" title="source: imgur.com" />
+                            <a href="https://www.linkedin.com/in/alejandro-matias-schwartz/" >
+                                <img src="https://i.imgur.com/zmw92Fp.png" />
                             </a>
-                            <!-- <img src="images/twitter.png" alt="Logo twitter"> -->
-                        </figure>                 
-                    </div>
-                    <div class="contact__logo--container">
-                        <figure class="contact__logos--figure">
-                            <a href="https://imgur.com/YnmsWrN">
-                                <img src="https://i.imgur.com/YnmsWrN.png" title="source: imgur.com" />
-                            </a>
-                            <!-- <img src="images/github.png" alt="Logo github"> -->
-                        </figure>
-                    </div>
+                        </figure>         
+                    </div>        
                 </div>
             </section>
         </footer>
         <div class="design"> 
             <p> Diseñado por: <strong>Alejandro Schwartz</strong> <br/> Cel: +54 0351 3022392 <br/> Córdoba - Argentina </p> 
         </div>
-        
-        <script src="play.js" > 
-        </script>
 
+        <script src="play.js" > </script>
+
+        <script>
+            const menu = document.querySelector(".nav__ul");
+            const burgerButton = document.querySelector("#burger-menu");
+            burgerButton.addEventListener("click", showHide);
+    
+            console.log(menu);
+            console.log(burgerButton);
+    
+            function showHide() {
+                if (menu.classList.contains("is-active")) {
+                    menu.classList.remove("is-active");
+                } else {
+                    menu.classList.add("is-active");
+                }
+            }
+        </script>
     </body>
 </html>

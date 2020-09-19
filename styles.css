@@ -3,7 +3,27 @@ body {
     padding: 0;
 }
 
-.cabecera {
+.icon__menu {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 3px solid #000000;
+    background: rgba(224, 224, 224, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    left: 8px;
+    top: 8px;
+}
+
+.icon__menu img {
+    width: 20px;
+    height: 20px;
+}
+
+.header {
     height: 90px;
     background: #3a0088;
     color: rgb(255, 255, 255);
@@ -14,37 +34,37 @@ body {
     align-items: center;
 }
 
-.cabecera__div {
+.header__div {
     height: 90px;
     width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-} 
-
-.cabecera__logo {
-    height: 60px;
-    width: 80px;
 }
 
-.cabecera__logo--image {
+.header__figure {
+    height: 60px;
+    /* width: 80px; */
+}
+
+.header__image {
     height: 60px;
 }
 
-.navegador {
+.nav {
     margin: 0;
     display: flex;
     align-items: center;
 }
 
-.navegador__juego {
+.nav__ul {
     margin: 0;
     display: flex;
     justify-content: space-between;
     list-style: none;
 }
 
-.navegador__juego a {
+.nav__ul a {
     margin: 0;
     padding: 6px 24px;
     border-radius: 8px;
@@ -54,7 +74,7 @@ body {
     text-decoration: none;
 }
 
-.navegador__juego a:hover {
+.nav__ul a:hover {
     padding: 6px 24px;
     border-radius: 8px;
     text-decoration: none;
@@ -63,24 +83,21 @@ body {
 
 .article {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
 
 .article__container {
-    width: 85%;
+    width: 90%;
     margin: 30px 0px;
     border-radius: 1em;
     background: #e61c5d;
     color: rgb(19, 2, 2);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-
     -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
     -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
     box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.15);
@@ -105,15 +122,16 @@ body {
     text-align: center;
 }
 
-.articulo__opciones {
+.article__option {
     height: 40px;
-    width: 360px;
+    width: 65vw;
+    max-width: 600px;
     color: rgb(19, 2, 2);
     font-size: 18px;
     font-family: Arial black;
 }
 
-.articulo__boton {
+.article__button {
     height: 40px;
     width: 200px;
     margin: 1em;
@@ -124,7 +142,6 @@ body {
 }
 
 .mano__container {
-    /* border: 2px solid red; */
     width: 500px;
     height: 150px;
     display: flex;
@@ -133,11 +150,9 @@ body {
 }
 
 .mano {
-    /* border: 2px solid red; */
     border-radius: 20px;
     width: 150px;
     height: 150px;
-
     -webkit-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
     box-shadow: 0px 3px 8px 4px rgba(0,0,0,0.1);
@@ -155,7 +170,6 @@ body {
 }
 
 .manoVs {
-    /* border: 2px solid red; */
     width: 100px;
     height: 150px;
     font-family: Arial, Helvetica, sans-serif;
@@ -167,7 +181,6 @@ body {
 }
 
 .results {
-    /* border: 2px solid red; */
     width: 500px;
     height: 60px;
     margin-bottom: 50px;
@@ -184,7 +197,6 @@ body {
 }
 
 .footer {
-    /* height: 170px; */
     padding: 30px;
     background: #930077;
     color: rgb(255, 255, 255);
@@ -198,9 +210,7 @@ body {
 }
 
 .contact {
-    /* height: 200px; */
     font-size: 24px;
-    /* background: rgb(115, 115, 214); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,7 +269,6 @@ body {
 }
 
 .design {
-    /* width: 100%; */
     margin: 0;
     padding: 16px;
     background: #3a0088;
@@ -270,4 +279,169 @@ body {
     font-size: 18px;
     font-weight: 600;
     color: #ffffff;
+}
+
+
+
+
+
+/*     Media queries     */
+
+@media only screen and (max-width: 479px) {
+
+    .icon__menu {
+        display: flex;
+    }
+
+    .header__div {
+        justify-content: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav__ul {
+        position: fixed;
+        background-color: rgba(5, 111, 255, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -120vw;
+        width: 100vw;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .nav__ul.is-active {
+        left: 0;
+    }
+
+    .nav__ul--li {
+        width: 220px;
+        margin: 14px;
+        padding: 6px;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+    }
+
+    .nav__ul a {
+        padding: 8px 70px;
+    }
+
+    .nav__ul a:hover {
+        background: none;
+        padding: 8px 70px;
+    }
+
+    .mano__container {
+        width: 75vw;
+    }
+
+    .mano {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .manoJugador__img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .manoMaquina__img {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .article p {
+        margin: 4px;
+        font-size: 20px;
+    }
+
+    .article__text {
+        padding: 14px;;
+    }
+
+    .footer {
+        font-size: 20px;
+    }
+
+    .contact__logo--container {
+        height: 80px;
+        width: 80px;
+    }
+
+    .contact__logos--figure img {
+        height: 70px;
+        width: 70px;
+        padding: 10px;
+    }
+
+    .contact__logos--figure img:hover {
+        height: 75px;
+        width: 75px;
+        padding: 10px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .icon__menu {
+        display: flex;
+    }
+
+    .header__div {
+        justify-content: center;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .nav__ul {
+        position: fixed;
+        background-color: rgba(5, 111, 255, 0.8);
+        z-index: 3;
+        top: 0;
+        left: -120vw;
+        width: 100vw;
+        bottom: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .nav__ul.is-active {
+        left: 0;
+    }
+
+    .nav__ul--li {
+        width: 260px;
+        margin: 14px;
+        padding: 6px;
+        border: 2px solid #ffffff;
+        border-radius: 6px;
+    }
+
+    .nav__ul a {
+        padding: 8px 70px;
+    }
+
+    .nav__ul a:hover {
+        background: none;
+        padding: 8px 70px;
+    }
+
+    .mano__container {
+        width: 75vw;
+    }
+
+    .contact__logo--container {
+        height: 110px;
+        width: 110px;
+    }
 }

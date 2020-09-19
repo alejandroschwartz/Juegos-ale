@@ -1,3 +1,4 @@
 # Saco los archivos binario como imagenes de GitHub
 *.jpg
 *.png
+*.svg
