@@ -60,6 +60,31 @@
                 </div>
             </div>
         </article>
+
+
+        <article class="article">
+            <div class="article__container">
+                <div class="article__text">
+                    <p> <strong> Lanza el dado! </strong> </p>
+                    <br />
+                </div>
+                </select>    
+                <input class="article__button" type="button" value="Lanzar dado" id="botonDado" />
+                <div class="mano__container">
+                    <div class="mano">
+                        <img class="manoJugador__img" src="https://i.imgur.com/lpcF33U.png" id="num1" />
+                    </div>
+                    <div class="mano">
+                        <img class="manoMaquina__img" src="https://i.imgur.com/lpcF33U.png" id="num2" />
+                    </div> 
+                </div>
+                <div class="results">
+                    <h3 id="resultadoDado"></h3>
+                </div>
+            </div>
+        </article>
+
+
         <footer class="footer"> 
             <div class="contact__text">
                 <h2>¿Creamos algo juntos?</h2>
@@ -103,6 +128,7 @@
         </div>
 
         <script src="play.js" > </script>
+        <script src="dados.js" ></script>
 
         <script>
             const menu = document.querySelector(".nav__ul");

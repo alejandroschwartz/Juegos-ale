@@ -283,7 +283,6 @@ body {
 
 
 
-
 /*     Media queries     */
 
 @media only screen and (max-width: 479px) {
@@ -443,5 +442,30 @@ body {
     .contact__logo--container {
         height: 110px;
         width: 110px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .header {
+        height: 110px;
+    }
+
+    .header__div {
+        height: 110px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .header__figure {
+        margin: 0%;
+    }
+
+    .nav__ul {
+        display: flex;
+    }
+
+    .nav__ul--li {
+        font-size: 16px;
     }
 }
